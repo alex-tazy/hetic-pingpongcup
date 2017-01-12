@@ -4,7 +4,7 @@
     <!--  Basic Meta  -->
     <meta charset="utf-8">
 
-    <title>{% block title %}PingPongCup | Admin{% endblock %}</title>
+    <title>{% block title %}PingPongCup | Super Admin{% endblock %}</title>
 
     <!--  Mobile Meta  -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -41,7 +41,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6">
-                        <h1>Ping Pong Startup Cup</h1>
+                        <img style="width: 7%;display:inline-block;margin-right:2%;"src="{{asset('bundles/heticapp/img/logo_dv.png')}}"><h1 style="display:inline-block;">Ping Pong Startup Cup</h1>
                     </div>
                     <div class="col-sm-6">
                         <div class="pull-right">
@@ -49,7 +49,7 @@
                                 <span class="user">{% if is_granted('ROLE_ADMIN')%}{{app.user.firstname}} {{app.user.lastname}}{% else %}Super Admin{% endif %}</span><br>
                                 <a href="{{path('fos_user_security_logout')}}" class="logout">Déconnexion</a>
                             </div>
-                            <img src="http://placehold.it/40x40">
+                            <img style="width: 30px;"src="{{asset('bundles/heticapp/img/profilzer.png')}}">
                         </div>
                     </div>
                 </div>
@@ -59,13 +59,7 @@
             <div class="row">
                 <div class="col-sm-12">
                     <h1 class="role">{% if is_granted('ROLE_ADMIN') %}Admin{% else %}Super Admin{% endif %}</h1>
-                    <nav class="navigation">
-                        <ul>
-                            <li {% if app.request.attributes.get('_route') == "hetic_core_homepage" %}class="active"{% endif %}><a href="{{path('hetic_core_homepage')}}">Invitation & Particpants</a></li>
-                            <li {% if app.request.attributes.get('_route') == "hetic_core_tournament" %}class="active"{% endif %}><a href="{{path('hetic_core_tournament')}}">Gestion du Tournoi Interne</a></li>
-                            <li {% if app.request.attributes.get('_route') == "hetic_core_startup_profile" %}class="active"{% endif %}><a href="{{path('hetic_core_startup_profile', {'id': app.user.getStartup.getId()})}}">Profil entreprise</a></li>
-                        </ul>
-                    </nav>
+                    
                 </div>
             </div>
         </div>

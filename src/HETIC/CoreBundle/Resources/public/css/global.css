@@ -1,8 +1,29 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Light.otf");
+}
+@font-face {
+    font-family: "title";
+    src: url("../fonts/Montserrat-SemiBold.otf");
+}
+@font-face {
+    font-family: "text_body";
+    src: url("../fonts/Montserrat-Regular.otf");
+}
+@font-face {
+    font-family: "para";
+    src: url("../fonts/Montserrat-ExtraLight.otf");
+}
+
 header .top-header {
     height: 65px;
     border-bottom: 1px solid #DDD;
     display: flex;
     align-items: center;
+    color: #fe5b39;
+    background-color: black;
+    box-shadow: 0 0 5px black;
+    font-family: Montserrat;
 }
 header .top-header .row {
     display: flex;
@@ -126,6 +147,7 @@ main#profile .banner .edit_button a:hover {
 .contenu {
     padding: 30px 20px 0 20px;
     text-align: center;
+    
 }
 
 .participants {
@@ -163,4 +185,24 @@ main#profile .balle {
     position: absolute;
     top: 30%;
     right: 10%;
+}
+
+
+.send_all_email{
+        background-color: transparent;
+    border: 1px solid #fe5b39;
+    border-radius: 10px;
+     transition: all 0.6s ease;
+}
+
+.send_all_email:hover{
+        background-color: #fe5b39;
+    border: 1px solid #fe5b39;
+    border-radius: 10px;
+    color:white;
+    transition: all 0.6s ease;
+}
+
+.container{
+    font-family: Montserrat;
 }

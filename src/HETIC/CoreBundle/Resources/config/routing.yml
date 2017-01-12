@@ -28,10 +28,6 @@ hetic_core_startup_edit:
     path:     /admin/startup/{id}/profil/modifier
     defaults: { _controller: HETICCoreBundle:Profile:edit }
 
-hetic_core_get_players:
-    path:     /getplayers
-    defaults: { _controller: HETICCoreBundle:Tournament:getPlayers }
-
 # SUPER ADMIN
 
 hetic_core_superadmin_homepage:

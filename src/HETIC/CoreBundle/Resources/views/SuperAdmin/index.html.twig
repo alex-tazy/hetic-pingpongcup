@@ -1,5 +1,55 @@
-{% extends 'HETICCoreBundle::layout.html.twig' %}
+{% extends 'HETICCoreBundle::layoutSA.html.twig' %}
 
 {% block main %}
+   
+   <main id="landing" role="main">
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                       
+                        <div class="content">
+                            <h5>PARTICIPANTS À CONFIRMER</h5>
+                            <h5 style="float:right;">Phase <strong style="font-size:1.5em;color:#fe5b39">1</strong> - 2 - 3</h5>
+
+                            <table class="table">
+                               <img src="http://placehold.it/60x60">
+                                <thead>
+                                    <tr>
+                                        <th>Statut</th>
+                                        <th>Nom de la Start Up</th>
+                                        <th>Type de structure</th>
+                                        <th>Nom</th>
+                                        <th>Prénom</th>
+                                        <th>Adresse e-mail</th>
+                                        <th>Téléphone</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="color:green">Validé</td>
+                                        <td>zer</td>
+                                         <td>zer</td>
+                                         <td>zer</td>
+                                         <td>zer</td>
+                                         <td>zer</td>
+                                         <td>zer</td>
+                                    </tr>
+                                  
+                                       
+                                 
+                                </tbody>
+                            </table>
+                            <button class="send_all_email" data-toggle="modal" data-target="#myModal">Valider l'inscription</button>
+                            <button class="send_all_email" data-toggle="modal" data-target="#myModal">Envoyer e-mail</button>
+                            
+                             <button class="send_all_email" data-toggle="modal" data-target="#myModal">Choisir le nombre de champions</button>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+</main>
     
 {% endblock main %}
