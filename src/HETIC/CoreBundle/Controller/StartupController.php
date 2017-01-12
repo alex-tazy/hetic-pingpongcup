@@ -30,6 +30,6 @@ class StartupController extends Controller
             return $this->redirectToRoute('hetic_app_homepage');
         }
 
-        return $this->render('HETICCoreBundle:Invite:join.html.twig', array('form' => $form->createView()));
+        return $this->render('HETICCoreBundle:Invite:join.html.twig', array('form' => $form->createView(), 'startup' => $startup));
     }
 }

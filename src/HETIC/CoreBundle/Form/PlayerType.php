@@ -13,10 +13,10 @@ class PlayerType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('lastname',  TextType::class, array('label' => 'Nom'))
-            ->add('firstname', TextType::class, array('label' => 'Prénom'))
-            ->add('email',     TextType::class, array('label' => 'Email'))
-            ->add('phone',     TextType::class, array('label' => 'Téléphone'))
+            ->add('lastname',  TextType::class, array('label' => 'Nom', 'attr' => array('placeholder' => 'Nom')))
+            ->add('firstname', TextType::class, array('label' => 'Prénom', 'attr' => array('placeholder' => 'Prénom')))
+            ->add('email',     TextType::class, array('label' => 'Email', 'attr' => array('placeholder' => 'Email')))
+            ->add('phone',     TextType::class, array('label' => 'Téléphone', 'attr' => array('placeholder' => 'Téléphone')))
             ->add('save',      SubmitType::class, array('label' => 'Envoyer'))
         ;
     }
