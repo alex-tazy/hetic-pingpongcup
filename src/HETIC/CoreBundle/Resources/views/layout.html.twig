@@ -62,7 +62,7 @@
                     <h1 class="role">{% if is_granted('ROLE_ADMIN') %}Admin{% else %}Super Admin{% endif %}</h1>
                     <nav class="navigation">
                         <ul>
-                            <li {% if app.request.attributes.get('_route') == "hetic_core_homepage" %}class="active"{% endif %}><a href="{{path('hetic_core_homepage')}}">Invitation & Particpants</a></li>
+                            <li {% if app.request.attributes.get('_route') == "hetic_core_homepage" %}class="active"{% endif %}><a href="{{path('hetic_core_homepage')}}">Invitation & Participants</a></li>
                             <li {% if app.request.attributes.get('_route') == "hetic_core_tournament" %}class="active"{% endif %}><a href="{{path('hetic_core_tournament')}}">Gestion du Tournoi Interne</a></li>
                             <li {% if app.request.attributes.get('_route') == "hetic_core_startup_profile" %}class="active"{% endif %}><a href="{{path('hetic_core_startup_profile', {'id': app.user.getStartup.getId()})}}">Profil entreprise</a></li>
                         </ul>
