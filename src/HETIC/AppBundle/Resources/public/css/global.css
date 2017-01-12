@@ -628,7 +628,7 @@ main#joinStartup form button[type="submit"] {
 main#joinStartup form a {
     color: #000;
     font-size: 0.9em;
-=======
+}
 .connexion_form{
 background-color: #fe5b39;
     border-radius: 10px;
@@ -680,5 +680,4 @@ background-color: #fe5b39;
     margin-top:2.5%;
     color:black;
     font-family:para;
->>>>>>> Stashed changes
 }
