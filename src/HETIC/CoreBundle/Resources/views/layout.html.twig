@@ -37,11 +37,11 @@
     {% endif %}
 
     <header>
-        <div class="top-header">
+              <div class="top-header">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6">
-                        <h1>Ping Pong Startup Cup</h1>
+                        <img style="width: 7%;display:inline-block;margin-right:2%;"src="{{asset('bundles/heticapp/img/logo_dv.png')}}"><h1 style="display:inline-block;">Ping Pong Startup Cup</h1>
                     </div>
                     <div class="col-sm-6">
                         <div class="pull-right">
@@ -49,7 +49,7 @@
                                 <span class="user">{% if is_granted('ROLE_ADMIN')%}{{app.user.firstname}} {{app.user.lastname}}{% else %}Super Admin{% endif %}</span><br>
                                 <a href="{{path('fos_user_security_logout')}}" class="logout">Déconnexion</a>
                             </div>
-                            <img src="http://placehold.it/40x40">
+                            <img style="width: 30px;"src="{{asset('bundles/heticapp/img/profilzer.png')}}">
                         </div>
                     </div>
                 </div>
